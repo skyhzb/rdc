@@ -1,0 +1,996 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:whitesmoke;
+   
+}
+  /* ---------------  index page style ------------------------------------*/
+
+/* Header Styling */
+.header {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+.header h6 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #212529;
+}
+
+.header p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #495057;
+}
+.header i {
+    color: #007bff;
+}
+
+.header a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.logo img {
+    max-height: 80px;
+    transition: height 0.3s ease;
+}
+
+@media (max-width: 576px) {
+    .logo img {
+        max-height: 60px;
+    }
+}
+
+
+/*---------------------- Navbar -------------------------*/
+.navbar {
+    background-color:#D3D3D3
+}
+
+.navbar-nav .nav-link {
+    color: #1E3A8A!important;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff !important;
+}
+
+/******** Carousel CSS *********/
+.carousel {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 170px);
+  min-height: 400px;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.carousel .carousel-inner,
+.carousel .carousel-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+/*
+.carousel,
+    .carousel-inner,
+    .carousel-item,
+    .carousel-item img {
+      height: 100vh;  Full height of the viewport
+    }
+       */
+/* Overlay on image */
+.carousel .carousel-item::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+/* Caption Container */
+.carousel .carousel-caption {
+    position: absolute;
+    top: 75%; /* Adjusted from 50% to move it down */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 0 15px;
+  }
+  
+
+/* Caption Text */
+.carousel .carousel-caption h1 {
+  color: #ed2121;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+.carousel .carousel-caption p {
+  color: #ffffff;
+  font-size: 30px;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.carousel-caption strong {
+  color: #FFD700;
+  font-weight: bold;
+}
+
+/* Buttons */
+.carousel .carousel-caption .btn {
+  padding: 15px 35px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.carousel .carousel-caption .btn-1:hover {
+  color: #030f27;
+  background: #FFD700;
+  border-color: #fc00ff;  
+  background: -webkit-linear-gradient(to right, #00dbde, #fc00ff); 
+  background: linear-gradient(to right, #00dbde, #fc00ff); 
+  border-radius: 50px;
+}
+
+.carousel .carousel-caption .btn-2:hover {
+    color: #030f27;
+    background: #FFD700;
+    border-color: #fc00ff;  
+    background: -webkit-linear-gradient(to right, #00dbde, #fc00ff); 
+    background: linear-gradient(to right, #00dbde, #fc00ff); 
+    border-radius: 50px;
+  }
+.carousel .carousel-caption .btn-1 {
+    background-color: #1E3A8A;
+    color: white;
+  }
+  
+  .carousel .carousel-caption .btn-2 {
+    background-color: #0DCAF0;
+    color: white;
+  }
+/* Button container (optional class for grouping buttons) */
+.slider-btn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Animations */
+.animated {
+  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.5s;
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 3;
+  width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100%, 100%;
+  background-image: none;
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+}
+
+.carousel-control-prev-icon::before {
+  transform: rotate(-135deg);
+}
+
+.carousel-control-next-icon::before {
+  transform: rotate(45deg);
+}
+
+/* Example animation */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+/* Responsive Styles */
+@media (max-width: 767.98px) {
+  .carousel .carousel-caption h1 {
+    font-size: 40px;
+    font-weight: 700;
+  }
+
+  .carousel .carousel-caption p {
+    font-size: 20px;
+  }
+
+  .carousel .carousel-caption .btn {
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+.gradient-text {
+    background: linear-gradient(90deg,black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+  
+@media (max-width: 575.98px) {
+  .carousel .carousel-caption h1 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .carousel .carousel-caption p {
+    font-size: 16px;
+  }
+
+  .carousel .carousel-caption .btn {
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+  }
+}
+
+
+
+
+/*   why to choose Us          */
+
+
+.why-choose-us {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.why-choose-us h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.icon-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.icon-box .icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.icon-box i {
+    font-size: 30px;
+    color: #000;
+}
+
+.icon-box p {
+    margin-top: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+/* Our Process Section */
+
+.our-process {
+    text-align: center;
+    padding: 80px 0;
+    background: url('images/1.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.our-process::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* darker overlay for contrast */
+    z-index: 1;
+}
+
+.our-process h2,
+.our-process .subheading,
+.our-process .container {
+    position: relative;
+    z-index: 2;
+}
+
+.our-process h2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.subheading {
+    color: #FFA500;
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+/* Process Box */
+.process-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    backdrop-filter: blur(5px);
+}
+
+.process-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.7);
+}
+
+/* Icon Styling */
+.process-box .icon {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.process-box i {
+    font-size: 34px;
+    color: #2e2b2b;
+}
+
+/* Text Styling */
+.process-box p {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .col-md-2 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-sm-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .our-process h2 {
+        font-size: 2rem;
+    }
+
+    .subheading {
+        font-size: 1.1rem;
+    }
+}
+
+
+.parallax-section {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .parallax-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  }
+  
+  .content-section {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+  }
+  
+
+
+  .faq-section {
+    padding: 80px 20px;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .faq-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #2c3e50;
+  }
+  
+  .faq-item {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .faq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .faq-item h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0057b7;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .faq-item p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+
+  /* --------------- End of index style ------------------------------------*/
+
+
+ 
+
+
+/* ----------------------------- about us -----------------*/
+.project-img {
+  width: 100%;
+  height: 50px; /* Adjust this height to fit your design */
+  object-fit: cover;
+  border-radius: 10px; 
+}
+
+.project-description {
+  text-align: justify; 
+  line-height: 1.6; 
+  margin: 0 auto; 
+  max-width: 800px; 
+}
+
+
+
+
+/*-------------------- Gallery Styling -------------------------*/
+
+
+.gallery-section {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.gallery-img {
+  width: 100%;              /* Makes image responsive to the column */
+  height: 250px;            /* Fixed height for uniform layout */
+  object-fit: cover;        /* Keeps image aspect ratio, crops overflow */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.03);   /* Optional zoom effect on hover */
+}
+
+
+
+
+
+
+
+/*-------------------- Contact page stylings ------------------------ */
+#contact {
+    padding: 80px 0;
+    background-color: #f5f7fa;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 42px;
+    color: #2b2567;
+    font-weight: bold;
+}
+
+.contact .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+
+
+.selectPart {
+    background-color: #2b2567;
+    color: #fff;
+    padding: 50px;
+    flex: 1;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 10px;
+}
+
+.contact-item i {
+    font-size: 40px;
+    margin-right: 16px;
+    color: #007bff;
+}
+
+.contact-text h2 {
+    font-size: 24px;
+    color: rgb(56, 65, 65);
+}
+
+.map iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 12px;
+}
+
+/* Contact Form */
+.form-container form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/*-------------------- end of Contact page stylings ------------------------ */
+
+
+
+/*-------------------- services page stylings ------------------------ */
+/* Flip Cards Scoped to .flip-services */
+.flip-services {
+  padding: 60px 20px;
+  background: #f3f7fa;
+}
+
+.flip-services .row  .service-card:hover{
+  box-shadow: 0 0 15px rgba(255, 165, 0, 0.7);
+}
+
+.flip-services .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.flip-services .service-card {
+  background: transparent;
+  width: 300px;
+  height: 360px;
+  perspective: 1000px;
+}
+
+.flip-services .service-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-services .service-card:hover .service-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-services .service-front,
+.flip-services .service-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* === Front (Before Flip) === */
+.flip-services .service-front {
+  background: #30E8BF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FF8235, #30E8BF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom right, #FF8235, #30E8BF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #000000;
+  transition: background 0.3s ease;
+}
+
+.flip-services .service-front i {
+  font-size: 50px;
+  margin-bottom: 15px;
+  color:whitesmoke; /* Blue icon */
+}
+
+.flip-services .service-front h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* === Back (After Flip) === */
+.flip-services .service-back {
+  background: #3498db; /* Blue background */
+  color: #ffffff;
+  transform: rotateY(180deg);
+}
+
+.flip-services .service-back p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .flip-services .service-card {
+    width: 90%;
+  }
+}
+
+
+.cta {
+    background: #67B26F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.cta .btn {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cta .btn:hover {
+    background: #222;
+}
+
+/*------------------ end of Services Page----------------------------- */
+
+
+
+  /* --------------- Real-estate  page  style ------------------------------------*/
+/* Base hero section */
+.hero {
+  background: url('images/r2.jpg') no-repeat center center/cover;
+  color: white;
+  height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Tablet and below */
+@media (max-width: 768px) {
+  .hero {
+    height: 90vh;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+  .hero {
+    height: 60vh;
+  }
+}
+
+
+ /* --------------- end of  Real-estate  page  style ------------------------------------*/
+
+
+
+
+  /* --------------- Completed Projects  style ------------------------------------*/
+
+
+  /* ---------------End of  Completed Projects  style ------------------------------------*/
+
+
+/*---- ------------------- on going   Stylling -----------*/
+
+
+/* Hover effect for images */
+
+.project-img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    height: 500px; 
+    width: 450px;
+ 
+  }
+  
+  .project-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Hover effect for button */
+  .project-btn {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .project-btn:hover {
+    background-color: #e0a800 !important;
+    color: #fff !important;
+  }
+  
+  /* Optional: Lift entire box on hover */
+  .project-box:hover {
+    transition: all 0.3s ease;
+    transform: translateY(-5px);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 576px) {
+    .project-img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .contact-info {
+      text-align: center !important;
+      margin-top: 15px;
+    }
+  
+    .header .container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .project-box {
+      text-align: center;
+    }
+  
+    .project-box .col-lg-6 {
+      padding: 0 15px;
+    }
+  
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+  
+    .nav-link {
+      text-align: center;
+    }
+  }
+  
+
+/*----- ongoing styling end ---*/
+
+
+
+
+/*---- ------------------- footer stylling  -----------*/
+/* Footer */
+.footer {
+    background-color: #1e1f22;
+    padding: 10px 0; /* reduced height */
+  }
+  
+  .footer .follow-text {
+    color: #ffa500;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+  }
+  
+  .footer .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+  }
+  
+  .footer .social-icons a:hover {
+    color: #ffa500;
+  }
+  
+  .footer .copyright-text {
+    font-size: 0.8rem;
+    color: #ccc;
+    margin-top: 5px;
+  }
+  
+  @media (max-width: 576px) {
+    .footer .social-icons a {
+      margin: 0 6px;
+      font-size: 1rem;
+    }
+  
+    .footer .follow-text {
+      font-size: 0.85rem;
+    }
+  
+    .footer .copyright-text {
+      font-size: 0.75rem;
+    }
+  }
+  
+/* Parallax Background Section */
+.parallax {
+    position: relative;
+    background-image: url('images/intr.jpg'); /* Use the image you want for the parallax effect */
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    height: 500px; /* Adjust the height as needed */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .parallax-content {
+    z-index: 10; /* Keeps content above the parallax background */
+  }
+  
+  .parallax h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .parallax p {
+    font-size: 1.5rem;
+  }
+  
