@@ -56,8 +56,13 @@
                     <input type="tel" class= "form-control" id="phone" name="phone" required>
 
                     <label for="subject">Subject:</label>
-                    <input type="text" class= "form-control" id="subject" name="subject" required>
-
+                    <select class="form-control" id="subject" name="subject" required="">
+                            <option value="" disabled="" selected="">Select a subject</option>
+                            <option value="Sales">Sales</option>
+                            <option value="Services">Services</option>
+                        </select>
+j
+                    
                     <label for="details">Details:</label>
                     <textarea id="details" class= "form-control" name="details" rows="4" required></textarea>
 
