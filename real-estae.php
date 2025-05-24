@@ -133,7 +133,7 @@
       <div class="row g-4">
         <div class="col-md-4">
           <div class="card property-card">
-            <img src="images/bhargi.jpeg" class="card-img-top" alt="House"height="200px">
+            <img src="images\bhargi.jpeg" class="card-img-top" alt="House"height="200px">
             <div class="card-body">
               <h5 class="card-title">6acres land 
 Baragi Gundlupet Taluk</h5>
@@ -144,16 +144,30 @@ Baragi Gundlupet Taluk</h5>
         </div>
         <div class="col-md-4">
           <div class="card property-card">
-            <img src="images/nanjanagudu.jpeg" class="card-img-top" alt="Apartment" height="175px">
+            <img src="images\nanjanagudu copy2.jpeg" class="card-img-top" alt="House" height="177px">
             <div class="card-body">
+              <h5 class="card-title">2.32 Acre Sy. No.101/2 Hura Nanjangud Thaluk</h5>
+              <p class="card-text"> </p>
+              <a href="#" class="btn btn-primary">Know More</a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="col-md-4">
+          <div class="card property-card">
+            <img src="images\nanjanagudu.jpeg" class="card-img-top" alt="Apartment" height="175px">
+                         <img src="images/bhargi.jpeg" class="card-img-top" alt="Apartment" height="175px"> -->
+
+            <!-- <div class="card-body">
               <h5 class="card-title">2.32 Acre
+
 Sy. No.101/2 
 Hura Nanjangud Thaluk</h5>
               <p class="card-text"></p>
               <a href="#" class="btn btn-primary">Know More</a>
             </div>
           </div>
-        </div>
+        </div> -->
+
       
       </div>
     </div>
@@ -194,7 +208,13 @@ Hura Nanjangud Thaluk</h5>
            <input type="tel" id="phone" class="form-control" name="phone" required>
 
            <label for="subject">Subject:</label>
-           <input type="text" id="subject" class="form-control" name="subject" required>
+           <select class="form-control" id="subject" name="subject" required="">
+                            <option value="" disabled="" selected="">Select a subject</option>
+                            <option value="Sales">Sales</option>
+                            <option value="Services">Services</option>
+                        </select>
+                    
+           <!-- <input type="text" id="subject" class="form-control" name="subject" required> -->
 
            <label for="details">Details:</label>
            <textarea id="details" name="details" class="form-control" rows="4" required></textarea>
