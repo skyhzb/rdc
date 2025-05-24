@@ -994,3 +994,46 @@ background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, F
     font-size: 1.5rem;
   }
   
+  /*whatsapp sticky*/
+
+.whats-app {
+  position: fixed;
+bottom:30%;
+  width: 60px;
+  height: 60px;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 32px;
+  /* box-shadow: 2px 2px 3px #999; */
+  z-index: 100;
+}
+
+/* calling sticky*/
+.call-now {
+  position: fixed;
+  bottom: 110px; /* Adjusted position above WhatsApp icon */
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #f34f1a; /* Use a red-ish or preferred call color */
+  color: #FFF;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 32px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.call-now i.my-float {
+  margin-top: 16px;
+}
+
+
+.my-float {
+  margin-top: 16px;
+}
+
