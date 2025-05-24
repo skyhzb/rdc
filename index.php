@@ -18,8 +18,8 @@
               <p>🏡<span class=" "> Build your home with passion, design it with love, and live in it with joy..</span></p>
               <br>
               <div class="slider-btn">
-                  <button class="btn btn-1" onclick="window.location.href='services.html';">Our Services</button>
-                  <button class="btn btn-2" onclick="window.location.href='contact.html';">Get a Quote</button>
+                  <button class="btn btn-1" onclick="window.location.href='services.php';">Our Services</button>
+                  <button class="btn btn-2" onclick="window.location.href='contact.php';">Get a Quote</button>
               </div>
           </div>
       </div>
@@ -30,8 +30,8 @@
               <p>🚧  <span class="">Quality construction, built to last a lifetime.</span></p>
               <br>
               <div class="slider-btn">
-                  <button class="btn btn-1"  onclick="window.location.href='services.html';">Our Services</button>
-                  <button class="btn btn-2" onclick="window.location.href='contact.html';">Get a Quote</button>
+                  <button class="btn btn-1"  onclick="window.location.href='services.php';">Our Services</button>
+                  <button class="btn btn-2" onclick="window.location.href='contact.php';">Get a Quote</button>
               </div>
           </div>
       </div>
@@ -42,8 +42,8 @@
               <p>🔨 <span class=" " >We don’t just build structures; we build dreams </span></p>
               <br> 
               <div class="slider-btn">
-                  <button class="btn btn-1"  onclick="window.location.href='services.html';">Our Services</button>
-                  <button class="btn btn-2" onclick="window.location.href='contact.html';">Get a Quote</button>
+                  <button class="btn btn-1"  onclick="window.location.href='services.php';">Our Services</button>
+                  <button class="btn btn-2" onclick="window.location.href='contact.php';">Get a Quote</button>
               </div>
           </div>
       </div>
@@ -211,7 +211,7 @@
         <div class="container">
           <h2>Ready to Start Your Project?</h2>
           <p>Get in touch with us today and let's build your vision together.</p>
-          <a href="contact.html" class="btn btn-light">Contact Us</a>
+          <a href="contact.php" class="btn btn-light">Contact Us</a>
         </div>
       </section>
  

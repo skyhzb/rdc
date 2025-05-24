@@ -55,7 +55,7 @@
               <i class="fas fa-envelope me-2"></i>Email Us
             </h6>
             <p class="mb-0">
-              <a href="mailto:engineer@rdbuildersanddeveloper">engineer@rdbuildersanddeveloper.com</a>
+              <a href="mailto:engineer@rdbuildersanddeveloper.com">engineer@rdbuildersanddeveloper.com</a>
             </p>
           </div>
         </div>

@@ -211,9 +211,9 @@
 
 
 <section class="cta">
-    <h2>Looking for Reliable Construction Services?</h2>
+    <h2>Looking for Reliable Construction / Real-Estate?</h2>
     <p>Contact us today for a free consultation and quote.</p>
-    <a href="contact.html" class="btn">Get a Quote</a>
+    <a href="contact.php" class="btn">Get a Quote</a>
 </section>
 
 

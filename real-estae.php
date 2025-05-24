@@ -1,4 +1,110 @@
-<?php include 'header.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RD Builders & Developer </title>
+    <link rel="icon" href="images/logo.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+ 
+</style>
+
+</head>
+<body>
+
+   <!-- Header Section -->
+<header class="header py-4">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- Logo -->
+      <div class="col-md-3 text-center text-md-start mb-3 mb-md-0">
+        <div class="logo">
+          <img src="images/logo.png" alt="Company Logo" class="img-fluid" style="max-height: 80px;">
+        </div>
+      </div>
+
+      <!-- Contact Info with Icons -->
+      <div class="col-md-9">
+        <div class="row text-center">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h6 class="fw-bold">
+              <i class="fas fa-clock me-2"></i>Opening Hour
+            </h6>
+            <p class="mb-0">Mon – Sun, 9:00AM – 9:00PM</p>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h6 class="fw-bold">
+              <i class="fas fa-phone me-2"></i>Call Us
+            </h6>
+            <p class="mb-0">+91 9482731510 | +91 7892405504</p>
+          </div>
+          <div class="col-md-4">
+            <h6 class="fw-bold">
+              <i class="fas fa-envelope me-2"></i>Email Us
+            </h6>
+            <p class="mb-0">
+              <a href="mailto:realestate@rdbuildersanddeveloper.com">realestate@rdbuildersanddeveloper.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+    <!-- Navbar -->
+   
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg ">
+    <div class="container">
+        <a class="navbar-brand" href="#">RD Builders and Developer </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link text-dark" href="index.php">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="about.php">About</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="services.php">Services</a></li>
+                <li class="nav-item"><a class="nav-link text-dark" href="real-estae.php">Real-estate </a></li>
+
+                <!-- Dropdown for Projects -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-dark" href="#" id="projectsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Projects
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="projectsDropdown">
+                        <li><a class="dropdown-item" href="completedprojects.php">Completed Projects</a></li>
+                        <li><a class="dropdown-item" href="Ongoing.php">Ongoing Projects</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link text-dark" href="contact.php">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<?php //include 'header.php'; ?>
 
 
     <!-- Navbar -->
@@ -56,9 +162,12 @@ Hura Nanjangud Thaluk</h5>
   <!-- About Section -->
   <section class="bg-light py-5">
     <div class="container">
+
       <h2 class="text-center mb-4">About Us</h2>
       <div class="text-center">
         <p class="text-justify " >
+      <br>
+      <br>
           DreamHomes is a trusted real estate agency offering premium residential and commercial properties. <br> 
           At DreamHomes, we offer a wide range of plots that suit every lifestyle and budget. Our plots are located in rapidly growing areas with excellent infrastructure, easy access to schools, hospitals, highways, and public transport. Each plot is legally verified with clear titles, proper drainage, road access, and ready for registration. Whether you want to construct a villa, duplex, or invest for future gains, our plots provide the ideal foundation.
       
@@ -101,8 +210,8 @@ Hura Nanjangud Thaluk</h5>
       <div class="container">
           <h3 class="fw-bold">Contact Us</h3>
           <p>📍 <strong>Office:</strong>  RD Builders and Developer <br> Opposite of Police Station, Madahalli Road, Gundlupet <br> Chamaraja Nagara</p>
-          <p>📧 <strong>Email:</strong> rdbuildersanddeveloper23@gmail.com</p>
-          <p>📞 <strong>Phone:</strong>  +91 9482731510 | 78924 05504</p>
+          <p>📧 <strong>Email:</strong> director@rdbuildersanddeveloper.com | engineer@rdbuildersanddeveloper.com </p>
+          <p>📞 <strong>Phone:</strong>  +91 9482731510 | +91 7892405504</p>
           
       </div>
   </section>
@@ -111,9 +220,9 @@ Hura Nanjangud Thaluk</h5>
   <div class="container">
     <h2 class="mb-3">Looking for your dream home?</h2>
     <p class="lead">We have the best properties at unbeatable prices. Get in touch now and let us help you find your perfect home.</p>
-    <a href="contact.html" class="btn btn-light btn-lg mt-3">Contact Us Now</a>
+    <a href="contact.php" class="btn btn-light btn-lg mt-3">Contact Us Now</a>
     <a 
-      href="https://wa.me/9886523359" 
+      href="https://wa.me/919482731510" 
       target="_blank" 
       class="btn btn-success btn-lg mt-3 ms-3">
       <i class="bi bi-whatsapp"></i> Chat on WhatsApp
@@ -140,7 +249,7 @@ if (!name || !address || !phone || !subject || !details) {
 
 let message = `Hello, my name is ${name}.\nAddress: ${address}\nPhone: ${phone}\nSubject: ${subject}\nDetails: ${details}`;
 let encodedMessage = encodeURIComponent(message);
-let whatsappURL = `https://wa.me/9482731510?text=${encodedMessage}`;
+let whatsappURL = `https://wa.me/919482731510?text=${encodedMessage}`;
 
 window.open(whatsappURL, '_blank');
 }
